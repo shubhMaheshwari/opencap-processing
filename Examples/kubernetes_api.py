@@ -123,7 +123,7 @@ for mot_file in tqdm(segments_data):
         
             folder_path = os.path.join(baseDir,'Data',session_id,'OpenSimData','Dynamics',trial_name)
             
-            if session_id not in mcs_files and os.path.exists(os.path.join(folder_path, f'kinematics_activations_{trial_name}_muscle_driven.mot')):
+            if os.path.exists(os.path.join(folder_path, f'kinematics_activations_{trial_name}_muscle_driven.mot')):
                 continue
 
 
